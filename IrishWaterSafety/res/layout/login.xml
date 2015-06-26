@@ -1,0 +1,189 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:gravity="center"
+        android:text="Examiner Login/Logout"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <LinearLayout 
+        android:id="@+id/examinerchoose"
+        android:layout_width="match_parent"
+    	android:layout_height="70dp"
+    	android:gravity="center"
+    	android:background="#70b270"
+    	android:layout_below="@+id/login_title"
+        android:orientation="horizontal">
+        
+        <Button
+        android:id="@+id/btnChooseExam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Examiner" />
+
+    <Button
+        android:id="@+id/btnChooseExt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="External Examiner" />
+    
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/user_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/examinerchoose"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="33dp"
+        android:text="Username" />
+
+    <!-- This is a dummy layout that knocks focus to the password box -->
+    <LinearLayout
+    android:focusable="true" android:focusableInTouchMode="true"
+    android:layout_width="0px" android:layout_height="0px"/>
+    
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/user_title"
+        android:layout_marginLeft="51dp"
+        android:nextFocusUp="@id/etUsername" 
+        android:nextFocusLeft="@id/etUsername"
+        android:hint="Please select a login option from above"
+        android:ems="10" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/tvPassTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/etUsername"
+        android:layout_marginLeft="51dp"
+        android:text="Password" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvPassTitle"
+        android:layout_marginLeft="51dp"
+        android:ems="10"
+        android:hint="Enter password"
+        android:inputType="textPassword" />
+    
+    <EditText
+        android:id="@+id/etSpecPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvPassTitle"
+        android:layout_marginLeft="51dp"
+        android:visibility="gone"
+        android:ems="10"
+        android:hint="Enter password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/etPassword"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="51dp"
+        android:text="Login" />
+    
+    <Button
+        android:id="@+id/btnExtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnLogin"
+        android:layout_marginLeft="51dp"
+        android:visibility="invisible"
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnExtLogin"
+        android:layout_below="@+id/btnExtLogin"
+        android:text="Logout" />
+    
+    <LinearLayout android:id="@+id/loggedOutBar"
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:visibility="gone"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:background="#e14040"
+        >
+        
+        <TextView 
+            android:id="@+id/loggedOutText"
+            android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="Not logged in!"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout android:id="@+id/loggedInExamBar"
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:visibility="gone"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:background="#5aba5a"
+        >
+        
+        <TextView 
+            android:id="@+id/loggedInExamText"
+            android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="Logged in as regular examiner!"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout android:id="@+id/loggedInExtBar"
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:visibility="gone"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:background="#5aba5a"
+        >
+        
+        <TextView 
+            android:id="@+id/loggedInExtText"
+            android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="Logged in as external examiner!"/>
+        
+    </LinearLayout>
+
+</RelativeLayout>

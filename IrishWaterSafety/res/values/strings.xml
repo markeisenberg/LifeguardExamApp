@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="home_name">Home</string>
+    <string name="logged_in">You are logged in!</string>
+    <string name="logged_out">You are not logged in!</string>
+    <string name="candidate_title">List of candidates</string>
+    <string name="app_name">Lifeguard Examination Application</string>
+    <string name="candidate_name_title">Name:</string>
+    <string name="first_name_tb">First name</string>
+    <string name="second_name_tb">Second name</string>
+    <string name="section_a_tb">Section A Markings</string>
+    <string name="section_b_tb">Section B Markings</string>
+    <string name="section_c_tb">Section C Markings</string>
+    <string name="btnAdd">Add participant</string>
+    <string name="action_stopwatch">Stopwatch</string>
+    <string name="action_login">Login/Logout</string>
+    <string name="action_candidatelist">Candidate List</string>
+    <string name="action_lifeguardmanual">Lifeguard Manual</string>
+    <string name="action_home">Home</string>
+    <string name="action_exit">Exit</string>
+    <string name="action_disclaimer">Disclaimer</string>
+    <string name="disclaimer_text">This digital version of the pool lifeguard manual acts as a 
+        supplement to the Android application. It is not designed to replace the existing 
+        hard copy of the Pool Lifeguard Manual. It is meant to be used as a quick reference by 
+        examiners and participants during the pool lifeguard examination. 
+        For a more comprehensive understanding and greater detail, consult the full 
+        Pool Lifeguard Manual, available from Irish Water Safety.</string>
+    <string name="btnSettings">Settings</string>
+    <string name="spinnerHint">Select a skill to examine</string>
+    <string name="btnPreviousSkill">Previous Skill</string>
+    <string name="btnNextSkill">Next skill</string>
+    <string name="timer">00:00:00</string>
+    <string name="startTimer">Start</string>
+    <string name="stopTimer">Stop</string>
+    <string name="chronometer_initial_format">%</string>
+    <string name="pw_hint_text">Enter password</string>
+    <string name="exam_sig">Examiner\'s Signature</string>
+    <string name="ext_exam_sig">External Examiner\'s Signature</string>
+    <string name="btnSubmit">Submit</string>
+    <string name="lipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent odio diam, maximus in risus vel, aliquet ultricies tortor. Cras placerat ipsum sit amet urna sollicitudin, a mollis leo faucibus.
+    </string>
+    <string name="username_textview">Username:</string>
+    <string name="password_textview">Password:</string>
+    <string name="submit">Submit</string>
+    
+    <string name="stroke_text">Inverted breast stroke - The upper part of the leg is kept in line with
+        the body. As the knees open slightly the legs are lowered and the feet are "cocked". The legs
+        are then swept sideways and together in a swirling or circular movement with the insides
+        of the lower legs pressing against the resistance of the water.</string>
+    <string name="reverse_text">The ability to reverse from the prone swimming position, 
+        in order to move quickly out of a subject\'s reach or to assume a "ready" position prior
+        to affecting a rescue is essential to the safety of the rescuer.</string>
+    <string name="fronta_text">The threatened swimmer tries to avoid the subject\'s grasp by 
+        tucking in his chin. At the same time he pushes his attacker with both hands at hip,
+        waist, shoulders or chest. A vigorous extension of the arms upwards forces the subject
+        to the surface, as the swimmer submerges to make his escape underwater. All actions
+        should be carried out speedily and aggressively.</string>
+    <string name="frontb_text">When grasped around the head and neck from the front the rescuer should
+        immediately take a quick breath, tuck in his chin, and submerge himself and the subject.
+        By pushing vigorously upwards with his hands on the subject\'s hips, ribs or armpits
+        he should loosen the grasp sufficiently to duck free. Speed is essential to prevent the
+        subject locking his legs around the rescuer.</string>
+    <string name="frontc_text">An alternative technique is for the rescuer to reach over the subject\'s 
+        arm, place their hand on opposite side of subject\'s face, place thumb and heel of hand
+        place under jawbone and their hand spread across the victim\'s face, little finger
+        pressed against the side of the nose. The rescuer takes a grip with his other hand
+        on the subject\'s arm, just above the elbow. By pushing upwards on the arm and away on the
+        face the rescuer can break the grip and turn the subject. The grip on the arm is held while
+        the other hand is withdrawn from the face and used to effect the "level".</string>
+    <string name="frontd_text">The rescuer is gripped around the arms and body. He should in turn
+        grasp the subject on both sides of the body at any position he can reach. The armpits or
+        base of the ribs are preferred positions. Tucking in his chin and thrusting his elbows
+        away from his side the rescuer forcefully pushes the subject away and upwards. The rescuer
+        is forced below the surface and can back away under water.</string>
+    <string name="level_text">For an effective and speedy rescue, the rescuer must be able to level the 
+        subject into the horizontal position on the back. This position may be achieved quickly as the 
+        carry or tow gets under way. In the case of a heavy subject it may be necessary for the 
+        rescuer to assist in the levelling by using a hand placed in the centre of the back.
+        The level is then maintained by the speed of the carry and by the support of the rescuer\'s
+        lower body underneath the subject. The subject\'s head is levered firmly backwards while the 
+        rescuer strokes vigorously with legs and free arm.</string>
+    <string name="chest_text">Chest carry - The subject\'s shoulder should fit snugly into the
+        rescuer\'s armpit with his head on the rescuer\'s shoulder. When changing from level to
+        cross-chest carry the rescuer brings the swimming arm over the shoulder of the subject,
+        securing a grip towars the far armpit with the forearm across the chest and the elbow
+        held firmly down.</string>
+    <string name="head_text">Head carry - From the levelling position, the rescuer takes a firm hold
+        of the subject\'s head (palms of the hands on the ears, fingers extended along the jaws
+        and thumbs on the temples) and tows to safety. The arm are held straight with the wrists
+        depressed, except when it is necessary to raise the subject\'s head, where they are bent to form
+        a right angle at the elbows.</string>
+    <string name="hair_text">Hair carry - From the "level" position, the rescuer brings the stroking
+        hand to the back of the subject\'s head, with fingers partially spread, and slides them forward
+        to grasp the hair. The wrist is depressed and with the arm straight, the rescuer tows the
+        subject to safety, checking constantly that the subject\'s face is above water. Either arm
+        can be used to "level". The other arm us used to carry while always maintaining contact during
+        change over.</string>
+    <string name="backgrab_text">As soon as the rescuer feels the arms encircling his head he should
+        do two things automatically i.e. tuck his chin and get a good breath of air. He should
+        then submerge with the subject. This may force the subject to release his grip. However, if it
+        is necessary to break the grasp, the rescuer should seize the wrist of the subject\'s
+        lower arm with his opposite hand and with the other hand get a forking grip just above the
+        elbow of the same arm, thumb on the inside. By twisting the subject\'s hand outwards and 
+        pushing up the elbow with the other hand he can then duck under the elbow that he had forced
+        up to position himself behind the subject. The grip on the wrist should be held until the other
+        hand is moved from the elbow to the chin to take a "level".</string>
+    <string name="backrelease_text">An alternative technique is for the rescuer to bring his hands
+        to the underside of the victim\'s arms just above the elbows. Keeping the chin tucked in
+        and the shoulders lifted the rescuer pushes upwards forcefully. While twisting the head and
+        shoulders he pushes the subject back and away. As the subject releases the grip the rescuer swims
+        up and out of reach.</string>
+    <string name="splinta_text">Where the victim is facedown, a head clamp technique can be used to
+        immobilize the head and neck while rotating the victim into a face-up position on the
+        surface of the water.</string>
+    <string name="splintb_text">From a position alongside the victim, the rescuer grasps each arm between
+        shoulder and elbow and gently extends the arms forward on each side of the victim\'s head.</string>  
+    <string name="splintc_text">With arms pressed firmly alongside the victim\'s head, a splint or clamp
+        is provided to immobalize the head and neck.</string>
+    <string name="splintd_text">A slow headfirst directed glide will move the victim towards a horizontal
+        position from which the body can more easily be rotated into a face-up position. The body is now rotated
+        by pressing the victim\'s nearest arm underneath the water while, at the same time drawing
+        the other arm across the surface until the body rests on the crook of the rescuer\'s arm.</string>
+    <string name="splinte_text">Immobilisation is maintained in that position while the rescuer
+        checks breathing. Rescue breathing may be applied, if necessary, by using the chest and one arm
+        to maintain the head clamp. N.B. This technique to immobilize the head and neck can be used in 
+        deep or shallow water.</string>
+    <string name="clampa_text">Move close to the victim\'s side, at shoulder depth, so that the
+        victim\'s body is against your chest. You may have to move the arm nearest to you so that
+        the victim\'s shoulder and arm are in position against your chest. Place one forearm
+        along the sternum with the fingers grasping the victim\'s chin (thumb to one side of the chin,
+        fingers to the other side) and the other forearm along the victim\'s spine with the hand
+        supporting the base of the skull.</string>
+    <string name="clampb_text">Squeeze both forearms together to create a vice, which clamps the 
+        victim\'s chest and back. The hand and fingers are tightened to restrict movement of the head
+        to secure immobilisation. Glide the victim forward to a horiztonal position and commence
+        rescue breathing, if necessary.</string>
+    <string name="clampc_text">N.B. If the victim is face-down, the body must be rotated to a face-up
+        position. Using the same rescue method, gently slide under the victim, rotating the body to
+        a face-up position as you surface at the other side of the victim, while retaining your hands
+         and forearms clamp grip.</string>
+    
+    <!-- string ids for home.xml -->
+    <string name="post_comment">Post Comment</string>
+    <string name="read_comments_title">Recent Comments</string>
+      <string name="passwords_not_same">Passwords don\'t match</string>
+    
+
+</resources>

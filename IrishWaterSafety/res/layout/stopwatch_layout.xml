@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#bef9f4"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvSWTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stopwatch"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <Chronometer 
+        android:id="@+id/chronometer"
+        android:format="@string/chronometer_initial_format"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="48sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+    
+    <LinearLayout
+        android:id="@+id/topButtonLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/btnStart"
+        android:onClick="startClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/tvTimer"
+        android:textSize="48sp"
+        android:layout_marginLeft="30dp"
+        android:text="@string/startTimer" />
+    
+    <Button
+        android:id="@+id/btnStop"
+        android:onClick="stopClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/tvTimer"
+        android:textSize="48sp"
+        android:layout_marginLeft="30dp"
+        android:visibility="gone"
+        android:text="@string/stopTimer" />
+    
+    <Button
+        android:id="@+id/btnReset"
+        android:onClick="resetClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="48sp"
+        android:layout_toRightOf="@+id/btnStart"
+        android:text="Reset" />
+    
+        </LinearLayout>
+        
+    <!-- Line separator -->
+
+            <TextView
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_width="330dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/topButtonLayout" />
+            
+            <Chronometer 
+        android:id="@+id/chronometer2"
+        android:format="@string/chronometer_initial_format"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="48sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+    
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/chronometer2"
+        android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btnStart2"
+        android:onClick="startClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="48sp"
+        android:layout_marginLeft="30dp"
+        android:text="@string/startTimer" />
+    
+    <Button
+        android:id="@+id/btnStop2"
+        android:onClick="stopClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="48sp"
+        android:layout_marginLeft="30dp"
+        android:visibility="gone"
+        android:text="@string/stopTimer" />
+    
+    <Button
+        android:id="@+id/btnReset2"
+        android:onClick="resetClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="48sp"
+        android:layout_toRightOf="@+id/btnStart2"
+        android:text="Reset" />
+    
+        </LinearLayout>
+
+</LinearLayout>

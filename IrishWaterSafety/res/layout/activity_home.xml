@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3cbdb4"
+    tools:context="com.marke.irishwatersafety.Home" > 
+    
+    <ImageView android:id="@+id/app_banner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="Home screen header image"
+        android:adjustViewBounds="true"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/app_banner" />
+    
+    <ImageButton
+        android:id="@+id/btnCandidateList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/app_banner"
+        android:contentDescription="Button for tabulated results"
+        android:adjustViewBounds="true"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/cand_button_styles" />
+    
+    <ImageButton
+        android:id="@+id/btnLifeguardManual"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnCandidateList"
+        android:contentDescription="Button for stopwatch"
+        android:adjustViewBounds="true"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/manual_button_styles" />
+    
+    <ImageButton
+        android:id="@+id/btnStopwatch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnLifeguardManual"
+        android:contentDescription="Button for lifeguard manual"
+        android:adjustViewBounds="true"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/stopwatch_button_styles" />
+
+    <ImageButton
+        android:id="@+id/btnTabulatedResults"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnStopwatch"
+        android:contentDescription="Button for candidate list"
+        android:adjustViewBounds="true"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/tabulated_button_styles" />
+
+</RelativeLayout>

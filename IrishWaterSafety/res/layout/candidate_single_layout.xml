@@ -1,0 +1,1418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bef9f4"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <TextView
+        android:id="@+id/tvCandNameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/candidate_name_title"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:selectAllOnFocus="true"
+        android:layout_toRightOf="@+id/tvCandNameTitle"
+        android:ems="10"
+        android:layout_marginTop="3dp"
+        android:hint="@string/first_name_tb"
+        android:inputType="textPersonName"
+        android:width="110dp" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:selectAllOnFocus="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/editText1"
+        android:ems="10"
+        android:layout_marginTop="3dp"
+        android:hint="@string/second_name_tb"
+        android:inputType="textPersonName"
+        android:width="140dp" >
+    </EditText>
+    
+    <TextView
+        android:id="@+id/tvDOBTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:text="Date of birth:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:selectAllOnFocus="true"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/editText1"
+        android:ems="10"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="120dp"
+        android:hint="Date of birth"
+        android:inputType="textPersonName"
+        android:width="140dp" >
+    </EditText>
+
+   <!--  <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText2"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/editText2"
+        android:text="" /> -->
+
+    <TextView
+        android:id="@+id/tvLineSeparator"
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tvDOBTitle" />
+    
+    <ScrollView android:id="@+id/scrollView1" 
+        android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:layout_below="@+id/tvLineSeparator"
+            android:layout_marginTop="36dp">
+            
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:orientation="vertical">
+            
+            <TextView
+            android:id="@+id/TextView01"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvLineSeparator"
+            android:layout_above="@+id/tableRow1"
+            android:layout_marginTop="14dp"
+            android:text="@string/section_a_tb"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <TableLayout android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:background="#3cbdb4"
+            android:layout_marginTop="40dp">
+        <!-- Title (row 1) -->
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tvSecA_C1_title"
+                    android:layout_width="150dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:text="Skill"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/tvSecA_C2_title"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:text="Yes"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/tvSecA_C3_title"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:text="No"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/tvSecA_C4_title"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:text="Mark 0-4"
+                    android:textColor="#000000" />
+            </TableRow>
+
+            <!-- Row 2 -->
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/etSecA_C1R2"
+                    android:layout_width="150dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:text="Check for safety"
+                    android:textColor="#000000" />
+
+                <CheckBox
+                    android:id="@+id/cbSecA_C2R2_Yes"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textColor="#000000" />
+
+                <CheckBox
+                    android:id="@+id/cbSecA_C3R2_No"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textColor="#000000" />             
+
+                <EditText
+                    android:id="@+id/etSecA_C4R2_Marking"
+                    android:layout_height="34dp"
+                    android:selectAllOnFocus="true"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:inputType="number"
+                    android:padding="2dip"
+                    android:textColor="#000000" />
+            </TableRow>
+            
+            <!-- Line separator -->
+            <TextView
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+        
+        <!-- Row 3 -->
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/etSecA_C1R3"
+                    android:layout_width="150dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:text="Check for response"
+                    android:textColor="#000000" />
+
+                <CheckBox
+                    android:id="@+id/cbSecA_C2R3_Yes"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textColor="#000000" />
+
+                <CheckBox
+                    android:id="@+id/cbSecA_C3R3_No"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textColor="#000000" />       
+
+                <EditText
+                    android:id="@+id/etSecA_C4R3_Marking"
+                    android:layout_height="34dp"
+                    android:selectAllOnFocus="true"
+                    
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:inputType="number"
+                    android:padding="2dip"
+                    android:textColor="#000000" />
+            </TableRow>
+            
+            <!-- Line separator -->
+            <TextView
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+        
+        <!-- Row 4 -->
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/etSecA_C1R4"
+                    android:layout_height="34dp"
+                    android:selectAllOnFocus="true"
+                    android:layout_width="150dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:text="Shout for help"
+                    android:textColor="#000000" />
+
+                <CheckBox
+                    android:id="@+id/cbSecA_C2R4_Yes"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textColor="#000000" />
+
+                <CheckBox
+                    android:id="@+id/cbSecA_C3R4_No"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/etSecA_C4R4_Marking"
+                    android:layout_height="34dp"
+                    android:selectAllOnFocus="true"
+                    
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:inputType="number"
+                    android:padding="2dip"
+                    android:textColor="#000000" />
+            </TableRow>
+            
+            <!-- Line separator -->
+            <TextView
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+        
+        <!-- Row 5 -->
+
+            <TableRow
+                android:id="@+id/tableRow5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/etSecA_C1R5"
+                    android:layout_width="150dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:text="Open Airway"
+                    android:textColor="#000000" />
+
+                <CheckBox
+                    android:id="@+id/cbSecA_C2R5_Yes"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textColor="#000000" />
+
+                <CheckBox
+                    android:id="@+id/cbSecA_C3R5_No"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/etSecA_C4R5_Marking"
+                    android:layout_height="34dp"
+                    android:selectAllOnFocus="true"
+                    
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:inputType="number"
+                    android:padding="2dip"
+                    android:textColor="#000000" />
+                
+            </TableRow>
+            
+            <!-- Line separator -->
+            <TextView
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+        
+        <!-- Row 6 -->
+
+            <TableRow
+                android:id="@+id/tableRow6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/etSecA_C1R6"
+                    android:layout_width="150dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:text="Check for normal breathing"
+                    android:textColor="#000000" />
+
+                <CheckBox
+                    android:id="@+id/cbSecA_C2R6_Yes"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textColor="#000000" />
+
+                <CheckBox
+                    android:id="@+id/cbSecA_C3R6_No"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/etSecA_C4R6_Marking"
+                    android:layout_height="34dp"
+                    android:selectAllOnFocus="true"
+                    
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:inputType="number"
+                    android:padding="2dip"
+                    android:textColor="#000000" />
+            </TableRow>
+            
+            <!-- Line separator -->
+            <TextView
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+        
+        <!-- Row 7 -->
+
+            <TableRow
+                android:id="@+id/tableRow7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/etSecA_C1R7"
+                    android:layout_width="150dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:text="Send or go for help"
+                    android:textColor="#000000" />
+
+                <CheckBox
+                    android:id="@+id/cbSecA_C2R7_Yes"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textColor="#000000" />
+
+                <CheckBox
+                    android:id="@+id/cbSecA_C3R7_No"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/etSecA_C4R7_Marking"
+                    android:layout_height="34dp"
+                    android:selectAllOnFocus="true"
+                    
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:inputType="number"
+                    android:padding="2dip"
+                    android:textColor="#000000" />
+            </TableRow>
+            
+            <!-- Line separator -->
+            <TextView
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+        
+        <!-- Row 8 -->
+
+            <TableRow
+                android:id="@+id/tableRow8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/etSecA_C1R8"
+                    android:layout_width="150dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:text="Place heels of hand in centre of chest, interlocking fingers"
+                    android:textColor="#000000" />
+
+                <CheckBox
+                    android:id="@+id/cbSecA_C2R8_Yes"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textColor="#000000" />
+
+                <CheckBox
+                    android:id="@+id/cbSecA_C3R8_No"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/etSecA_C4R8_Marking"
+                    android:layout_height="34dp"
+                    android:selectAllOnFocus="true"
+                    
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:inputType="number"
+                    android:padding="2dip"
+                    android:textColor="#000000" />
+            </TableRow>
+            
+            <!-- Line separator -->
+            <TextView
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+        
+        <!-- Title (row 8.5) -->
+
+            <TableRow
+                android:id="@+id/tableRow8.5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tvSecA_C1_title2"
+                    android:layout_width="150dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:text="Skill"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/tvSecA_C2_title2"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:text="Yes"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/tvSecA_C3_title2"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:text="No"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/tvSecA_C4_title2"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:text="Mark 0-9"
+                    android:textColor="#000000" />
+            </TableRow>
+        
+            <!-- Line separator -->
+            <TextView
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+            
+        <!-- Row 9 -->
+
+            <TableRow
+                android:id="@+id/tableRow9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/etSecA_C1R9"
+                    android:layout_width="150dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:text="Commence CPR - 30 Chest compressions"
+                    android:textColor="#000000" />
+
+                <CheckBox
+                    android:id="@+id/cbSecA_C2R9_Yes"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textColor="#000000" />
+
+                <CheckBox
+                    android:id="@+id/cbSecA_C3R9_No"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/etSecA_C4R9_Marking"
+                    android:layout_height="34dp"
+                    android:selectAllOnFocus="true"
+                    
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:inputType="number"
+                    android:padding="2dip"
+                    android:textColor="#000000" />
+            </TableRow> 
+            
+            <!-- Line separator -->
+            <TextView
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+        
+        <!-- Row 10 -->
+
+            <TableRow
+                android:id="@+id/tableRow10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/etSecA_C1R10"
+                    android:layout_width="150dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:text="2 Rescue Breaths"
+                    android:textColor="#000000" />
+
+                <CheckBox
+                    android:id="@+id/cbSecA_C2R10_Yes"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textColor="#000000" />
+
+                <CheckBox
+                    android:id="@+id/cbSecA_C3R10_No"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/etSecA_C4R10_Marking"
+                    android:layout_height="34dp"
+                    android:selectAllOnFocus="true"
+                    
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:inputType="number"
+                    android:padding="2dip"
+                    android:textColor="#000000" />
+            </TableRow>
+            
+            <!-- Line separator -->
+            <TextView
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+        
+        <!-- Row 11 -->
+
+            <TableRow
+                android:id="@+id/tableRow11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/etSecA_C1R11"
+                    android:layout_width="150dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:text="Recovery position"
+                    android:textColor="#000000" />
+
+                <CheckBox
+                    android:id="@+id/cbSecA_C2R11_Yes"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textColor="#000000" />
+
+                <CheckBox
+                    android:id="@+id/cbSecA_C3R11_No"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/etSecA_C4R11_Marking"
+                    android:layout_height="34dp"
+                    android:selectAllOnFocus="true"
+                    
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:inputType="number"
+                    android:padding="2dip"
+                    android:textColor="#000000" />
+            </TableRow>
+            
+            <!-- Line separator -->
+            <TextView
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+        <!-- Title (row 12) -->
+
+            <TableRow
+                android:id="@+id/tableRow12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tvSecA_C1_title3"
+                    android:layout_width="150dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:text="Multiple choice exam"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/tvSecA_C4_title3"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:text="Mark 0-10"
+                    android:textColor="#000000" />
+            </TableRow>
+            
+            <!-- Line separator -->
+            <TextView
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+            
+            <!-- Row 13 -->
+
+            <TableRow
+                android:id="@+id/tableRow13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/etSecA_C1R13"
+                    android:layout_width="150dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:text="General Aspects of Safe Lifeguarding MCQ (10 Questions)"
+                    android:textColor="#000000" />
+
+
+                <EditText
+                    android:id="@+id/etSecA_C4R13_Marking"
+                    android:layout_height="34dp"
+                    android:selectAllOnFocus="true"
+                    
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:inputType="number"
+                    android:padding="2dip"
+                    android:textColor="#000000" />
+            </TableRow>
+            
+            <!-- Line separator -->
+            
+            <TextView
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+            
+            <!-- Row 14 -->
+
+            <TableRow
+                android:id="@+id/tableRow14"
+                android:layout_width="match_parent"
+                android:visibility="invisible"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/etSecA_C1R14"
+                    android:layout_width="150dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:text="Total Mark Section A (Max. 65)"
+                    android:textColor="#000000" />
+
+
+                <EditText
+                    android:id="@+id/etSecA_C4R14_Marking"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:inputType="number"
+                    android:padding="2dip"
+                    android:textColor="#000000" />
+            </TableRow>
+            
+            <TextView
+            android:id="@+id/TextView02"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etSecA_C4R14_Marking"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:background="#bef9f4"
+            android:text="@string/section_b_tb"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            <!-- START SECTION B -->
+            <!-- Title Section B Explanation (row 15) -->
+
+            <TableRow
+                android:id="@+id/tableRow15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tvSecB_C1_title1"
+                    android:layout_width="150dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:text="Swim"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/tvSecB_C4_title2"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:text="Mark 0-45"
+                    android:textColor="#000000" />
+            </TableRow>
+            
+            <!-- Line separator -->
+            <TextView
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+            
+            <!-- Row 16 -->
+
+            <TableRow
+                android:id="@+id/tableRow16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/etSecB_C1R16"
+                    android:layout_width="150dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:text="200m Freestyle in less than 4mins (Start in water with Can Bouy/Rescue Tube and no tumbleturns) 200m Swim Timed. Mark out of 45 from 3mins 15seconds to 4mins = 45marks to 1 mark. (If a candidate's timed swim is outside of 4 minutes, he/she fails the Section B Assessement)"
+                    android:textColor="#000000" />
+
+
+                <EditText
+                    android:id="@+id/etSecB_C4R16_Marking"
+                    android:layout_height="34dp"
+                    android:selectAllOnFocus="true"
+                    
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:inputType="number"
+                    android:padding="2dip"
+                    android:textColor="#000000" />
+            </TableRow>
+            
+            <!-- Line separator -->
+            
+            <TextView
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+            
+            <!-- END SECTION B -->
+            
+            <TextView
+            android:id="@+id/tvsectionbtitle"
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etSecA_C4R14_Marking"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:background="#bef9f4"
+            android:text="@string/section_c_tb"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            <!-- START SECTION C -->
+            <!-- Title Section C Explanation (row 17) -->
+
+            <TableRow
+                android:id="@+id/tableRow17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tvSecC_C1_title1"
+                    android:layout_width="150dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:text="Skills"
+                    android:textColor="#000000" />
+                
+                <TextView
+                    android:id="@+id/tvSecC_C3_title2"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:text="Max. Mark"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/tvSecC_C4_title3"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:text="Mark"
+                    android:textColor="#000000" />
+            </TableRow>
+            
+            <!-- Line separator -->
+            <TextView
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+            
+            <!-- Row 18 -->
+
+            <TableRow
+                android:id="@+id/tableRow18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tvSecC_C1R18"
+                    android:layout_width="50dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:text="100m Tow with Canbuoy/Rescue Tube"
+                    android:textColor="#000000" />
+                
+                <TextView
+                    android:id="@+id/tvSecC_C3R18"
+                    android:layout_width="50dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:text="15"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/etSecC_C4R18_Marking"
+                    android:layout_height="34dp"
+                    android:selectAllOnFocus="true"
+                    
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:inputType="number"
+                    android:padding="2dip"
+                    android:textColor="#000000" />
+            </TableRow>
+            
+            <!-- Line separator -->
+            
+            <TextView
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+            
+            <!-- Row 19 -->
+
+            <TableRow
+                android:id="@+id/tableRow19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tvSecC_C1R19"
+                    android:layout_width="50dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:text="25m Approach, Release and 25m Carry (Front Double)"
+                    android:textColor="#000000" />
+                
+                <TextView
+                    android:id="@+id/tvSecC_C3R19"
+                    android:layout_width="50dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:text="25"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/etSecC_C4R19_Marking"
+                    android:layout_height="34dp"
+                    android:selectAllOnFocus="true"
+                    
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:inputType="number"
+                    android:padding="2dip"
+                    android:textColor="#000000" />
+            </TableRow>
+            
+            <!-- Line separator -->
+            
+            <TextView
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+            
+            <!-- Row 20 -->
+
+            <TableRow
+                android:id="@+id/tableRow20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tvSecC_C1R20"
+                    android:layout_width="50dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:text="25m Approach, Release and 25m Carry (Rear Double)"
+                    android:textColor="#000000" />
+                
+                <TextView
+                    android:id="@+id/tvSecC_C3R20"
+                    android:layout_width="50dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:text="25"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/etSecC_C4R20_Marking"
+                    android:layout_height="34dp"
+                    android:selectAllOnFocus="true"
+                    
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:inputType="number"
+                    android:padding="2dip"
+                    android:textColor="#000000" />
+            </TableRow>
+            
+            <!-- Line separator -->
+            
+            <TextView
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+            
+            <!-- Row 21 -->
+
+            <TableRow
+                android:id="@+id/tableRow21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tvSecC_C1R21"
+                    android:layout_width="50dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:text="Spinal Injury management in Shallow Water (Splint or Clamp)"
+                    android:textColor="#000000" />
+                
+                <TextView
+                    android:id="@+id/tvSecC_C3R21"
+                    android:layout_width="50dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:text="20"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/etSecC_C4R21_Marking"
+                    android:layout_height="34dp"
+                    android:selectAllOnFocus="true"
+                    
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:inputType="number"
+                    android:padding="2dip"
+                    android:textColor="#000000" />
+            </TableRow>
+            
+            <!-- Line separator -->
+            
+            <TextView
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+            
+            <!-- Row 22 -->
+
+            <TableRow
+                android:id="@+id/tableRow22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tvSecC_C1R22"
+                    android:layout_width="50dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:text="Underwater search 25m locate and pick up submerged manikin, exchange at surface for subject and administer deep water resuscitation for 10m"
+                    android:textColor="#000000" />
+                
+                <TextView
+                    android:id="@+id/tvSecC_C3R22"
+                    android:layout_width="50dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:text="20"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/etSecC_C4R22_Marking"
+                    android:layout_height="34dp"
+                    android:selectAllOnFocus="true"
+                    
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:inputType="number"
+                    android:padding="2dip"
+                    android:textColor="#000000" />
+            </TableRow>
+            
+            <!-- Line separator -->
+            
+            <TextView
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+            
+            <!-- END SECTION C -->
+            
+            <!-- Line separator -->
+            <TextView
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+            
+            <!-- Row 23 -->
+
+            <TableRow
+                android:id="@+id/tableRow23"
+                android:layout_width="match_parent"
+                android:visibility="invisible"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/etSecC_C1R23"
+                    android:layout_width="150dp"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:padding="2dip"
+                    android:text="Total Mark Section C (Max. 105)"
+                    android:textColor="#000000" />
+
+
+                <EditText
+                    android:id="@+id/etSecC_C4R23_Marking"
+                    android:layout_weight="1"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="left"
+                    android:inputType="number"
+                    android:padding="2dip"
+                    android:textColor="#000000" />
+            </TableRow>
+    
+        <RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bef9f4">
+    
+        <TextView android:id="@+id/tvSecASig1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/exam_sig"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+ 
+ <Button android:id="@+id/btnSubmitExamPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSecASig1"
+            android:text="@string/btnSubmit"/>
+ 
+ </RelativeLayout>
+ 
+        <!-- Line separator -->
+            <TextView
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+ 
+        <RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bef9f4"
+    android:layout_marginBottom="40dp">
+ 
+ <TextView android:id="@+id/tvSecASig2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ext_exam_sig"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+ 
+ <Button android:id="@+id/btnSubmitExtExamPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSecASig2"
+            android:text="@string/btnSubmit"/>
+ 
+ <Button android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnSubmitExtExamPass"
+            android:text="Delete user"/>
+ 
+ <!-- Line separator -->
+            <TextView
+        style="?android:attr/listSeparatorTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnDelete"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+ 
+</RelativeLayout>
+
+       </TableLayout>
+       
+    </LinearLayout>
+       
+        </ScrollView>
+        
+    <!-- Hidden edit texts to check for status -->
+    
+    <EditText
+        		android:id="@+id/etSecA_R2_Check"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:visibility="gone" />
+    
+    <EditText
+        		android:id="@+id/etSecA_R3_Check"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:visibility="gone" />
+    
+    <EditText
+        		android:id="@+id/etSecA_R4_Check"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:visibility="gone" />
+    
+    <EditText
+        		android:id="@+id/etSecA_R5_Check"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:visibility="gone" />
+    
+    <EditText
+        		android:id="@+id/etSecA_R6_Check"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:visibility="gone" />
+    
+    <EditText
+        		android:id="@+id/etSecA_R7_Check"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:visibility="gone" />
+    
+    <EditText
+        		android:id="@+id/etSecA_R8_Check"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:visibility="gone" />
+    
+    <EditText
+        		android:id="@+id/etSecA_R9_Check"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:visibility="gone" />
+    
+    <EditText
+        		android:id="@+id/etSecA_R10_Check"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:visibility="gone" />
+    
+    <EditText
+        		android:id="@+id/etSecA_R11_Check"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:visibility="gone" />
+    
+    <EditText
+        		android:id="@+id/etPassFailCheck"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:visibility="gone" />
+    
+    <EditText
+        		android:id="@+id/etExamConfirmCheck"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:visibility="gone" />
+    
+    <EditText
+        		android:id="@+id/etExtConfirmCheck"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:visibility="gone" />
+    
+    <EditText
+        		android:id="@+id/etCompleteCheck"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:visibility="gone" />
+    
+    <EditText
+        		android:id="@+id/etAbsoluteTotal"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:visibility="gone" />
+
+        </RelativeLayout>
+   
